@@ -1,34 +1,47 @@
-# 🎓 Aplikasi Manajemen Tugas Mahasiswa
+# Tugas Praktikum Pemrograman Web - Aplikasi Manajemen Tugas
 
-Aplikasi sederhana untuk membantu mahasiswa mengelola tugas akademik mereka.  
-Dibuat menggunakan **HTML, CSS, dan JavaScript murni** dengan penyimpanan **localStorage**.
+Repository ini berisi proyek aplikasi manajemen tugas mahasiswa sebagai bagian dari tugas praktikum mata kuliah **Pemrograman Aplikasi Web**.
+
+**Nama:** Muhammad Bimastiar  
+**NIM:** 123140211  
+**Program Studi:** Teknik Informatika
+
+---
+
+## 📝 Deskripsi Aplikasi
+Aplikasi Manajemen Tugas Mahasiswa adalah sebuah web application sederhana yang dirancang untuk membantu mahasiswa melacak dan mengelola tugas-tugas akademik.  
+Aplikasi ini sepenuhnya berjalan di sisi klien (client-side) dan menggunakan **localStorage browser** untuk menyimpan data, sehingga semua tugas tetap tersimpan meskipun halaman di-refresh atau browser ditutup.
 
 ---
 
 ## ✨ Fitur Utama
-
-- Menambahkan tugas baru (nama, mata kuliah, dan deadline)
-- Menandai tugas sebagai **selesai / belum selesai**
-- Menghapus tugas
-- Filter tugas berdasarkan status
-- Pencarian tugas berdasarkan nama atau mata kuliah
-- Menampilkan jumlah tugas dan statistik
-- Penyimpanan data secara **lokal (localStorage)**, jadi data tetap ada meskipun halaman direfresh
+- **CRUD Penuh**: Tambah, baca, ubah, dan hapus tugas.
+- **Penyimpanan Lokal**: Data tugas disimpan secara persisten di localStorage.
+- **Validasi Form**: Input kosong tidak diizinkan.
+- **Filter & Pencarian**: Filter berdasarkan status (selesai/belum) dan pencarian berdasarkan nama atau mata kuliah.
+- **Statistik Tugas**: Menampilkan jumlah tugas belum selesai.
+- **Desain Responsif**: Tampilan tetap nyaman di perangkat mobile.
 
 ---
 
-## 🧠 Cara Menjalankan
-
-1. Unduh semua file (`index.html`, `style.css`, `script.js`, `README.md`).
-2. Buka file `index.html` di browser.
-3. Tambahkan tugas baru dan kelola tugas sesuai kebutuhan.
+## 📸 Tampilan Aplikasi
+1. Tampilan Utama dengan Daftar Tugas  
+   ![image](image1.png)
+2. Tampilan Form dalam Mode Edit Tugas  
+   ![image](image2.png)
+3. Tampilan Fitur Filter dan Pencarian Aktif  
+   ![image](image3.png)
 
 ---
 
-## 🧩 Penjelasan Teknis
+## 🛠️ Penjelasan Teknis
 
-- **Penyimpanan Data:**  
-  Semua tugas disimpan di browser menggunakan `localStorage` dengan format JSON.
-  ```js
-  localStorage.setItem("tugas", JSON.stringify(arrayTugas));
-  ```
+### Penggunaan localStorage
+localStorage digunakan untuk menyimpan data tugas agar tetap tersedia meskipun halaman di-refresh.
+
+```javascript
+const saveTasks = () => {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+};
+
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
