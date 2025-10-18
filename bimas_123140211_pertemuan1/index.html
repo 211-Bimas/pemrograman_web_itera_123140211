@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Manajemen Tugas Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Aplikasi Manajemen Tugas Mahasiswa</h1>
+
+    <div class="container">
+      <!-- Card Form -->
+      <div class="card form-card">
+        <h2>Tambah Tugas Baru</h2>
+        <form id="formTugas">
+          <label for="namaTugas">Nama Tugas</label>
+          <input
+            type="text"
+            id="namaTugas"
+            placeholder="Masukkan nama tugas"
+            required
+          />
+
+          <label for="mataKuliah">Mata Kuliah</label>
+          <input
+            type="text"
+            id="mataKuliah"
+            placeholder="Masukkan nama mata kuliah"
+            required
+          />
+
+          <label for="deadline">Deadline</label>
+          <input type="date" id="deadline" required />
+
+          <button type="submit">Simpan Tugas</button>
+        </form>
+      </div>
+
+      <!-- Card Daftar Tugas -->
+      <div class="card list-card">
+        <h2>Daftar Tugas</h2>
+
+        <div class="filter">
+          <input type="text" id="cari" placeholder="Cari tugas..." />
+          <select id="filterStatus">
+            <option value="semua">Semua</option>
+            <option value="belum">Belum Selesai</option>
+            <option value="selesai">Selesai</option>
+          </select>
+        </div>
+
+        <ul id="daftarTugas"></ul>
+        <div id="statistik">Belum ada tugas</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
