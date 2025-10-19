@@ -1,4 +1,4 @@
-/* ===== GAYA UMUM ===== */
+/*  GAYA UMUM  */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #e6f0fa; /* biru lembut */
@@ -14,7 +14,7 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* ===== CONTAINER UTAMA ===== */
+/*  CONTAINER UTAMA  */
 .container {
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ h1 {
   gap: 25px;
 }
 
-/* ===== CARD DASAR ===== */
+/*  CARD DASAR  */
 .card {
   background: #ffffff;
   border-radius: 15px;
@@ -42,7 +42,7 @@ h1 {
   border-top: 6px solid #5ab0d8;
 }
 
-/* ===== FORM INPUT ===== */
+/*  FORM INPUT  */
 .form-card form {
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@ h1 {
   box-shadow: 0 5px 12px rgba(0, 80, 150, 0.25);
 }
 
-/* ===== FILTER & PENCARIAN ===== */
+/*  FILTER & PENCARIAN  */
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -124,7 +124,7 @@ h1 {
   box-shadow: 0 0 4px #5a9bd8;
 }
 
-/* ===== DAFTAR TUGAS ===== */
+/*  DAFTAR TUGAS  */
 ul {
   list-style: none;
   padding: 0;
@@ -138,8 +138,9 @@ li {
   padding: 10px 12px;
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
   transition: 0.2s;
 }
 
@@ -148,15 +149,7 @@ li:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 50, 0.08);
 }
 
-/* Tugas selesai */
-.selesai {
-  text-decoration: line-through;
-  color: #7fa2be;
-  background-color: #f1f7fb;
-  border-left-color: #a5c5e5;
-}
-
-/* Tombol kecil di daftar tugas */
+/* Tombol daftar tugas */
 li button {
   padding: 6px 8px;
   border: none;
@@ -180,7 +173,33 @@ li button:hover {
   opacity: 0.85;
 }
 
-/* ===== STATISTIK ===== */
+/*  Status  */
+.status-tugas {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.status-selesai {
+  background-color: #6ac57c;
+}
+
+.status-belum {
+  background-color: #e26a6a;
+}
+
+/* Coret nama tugas */
+.nama-tugas.selesai {
+  text-decoration: line-through;
+  color: #7c9ab9;
+}
+
+/*  STATISTIK  */
 #statistik {
   text-align: center;
   font-weight: bold;
@@ -191,7 +210,7 @@ li button:hover {
   box-shadow: 0 1px 6px rgba(0, 0, 50, 0.05);
 }
 
-/* ===== RESPONSIF ===== */
+/*  RESPONSIF  */
 @media (max-width: 480px) {
   .card {
     padding: 20px;
