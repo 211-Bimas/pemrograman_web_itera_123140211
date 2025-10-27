@@ -37,19 +37,21 @@ Artinya, data tugas dan kegiatan akan tetap tersimpan meskipun browser ditutup a
 
 > Ringkasan kegiatan dan tugas prioritas.
 
-![Beranda](screenshot-beranda.png)
+<img width="1919" height="913" alt="Image" src="https://github.com/user-attachments/assets/b7e3e34a-e9a9-4654-a39e-80c75d756928" />
 
 **2. Jadwal Kuliah**
 
 > Tabel jadwal kuliah per hari.
 
-![Jadwal Kuliah](screenshot-kuliah.png)
+<img width="1919" height="910" alt="Image" src="https://github.com/user-attachments/assets/d8ccc65d-1feb-49dd-ab99-e2e8af37c4c7" />
 
 **3. Jadwal Kegiatan**
 
 > CRUD kegiatan dengan fitur filter dan pencarian.
 
-![Kegiatan](screenshot-kegiatan.png)
+<img width="1900" height="908" alt="Image" src="https://github.com/user-attachments/assets/9eeb4873-810e-4bed-9091-393b65062590" />
+
+<img width="1903" height="796" alt="Image" src="https://github.com/user-attachments/assets/362fa7a2-72dc-4a2b-add0-dac11d6cd9a7" />
 
 ---
 
