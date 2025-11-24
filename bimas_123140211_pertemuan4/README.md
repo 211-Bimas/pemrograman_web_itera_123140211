@@ -1,4 +1,14 @@
-# Program Pengelolaan Data Nilai Mahasiswa
+# Tugas Praktikum Pemrograman Web – Program Pengelolaan Data Nilai Mahasiswa
+
+Repository ini berisi proyek **Program Pengelolaan Data Nilai Mahasiswa**, yang dikembangkan sebagai bagian dari tugas praktikum mata kuliah **Pemrograman Aplikasi Web**.
+
+- **Nama:** Muhammad Bimastiar  
+- **NIM:** 123140211  
+- **Program Studi:** Teknik Informatika
+
+---
+
+## Deskripsi Umum
 
 Program ini dibuat untuk mengelola data nilai mahasiswa menggunakan Python. Fitur mencakup perhitungan nilai akhir, penentuan grade, pencarian nilai tertinggi/terendah, filtering berdasarkan grade, serta penambahan data mahasiswa baru.
 
